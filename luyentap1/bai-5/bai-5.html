@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="bai5">
+        <h2>xếp hạng học lực</h2>
+
+        <input type="number" id="diemgiuaki" placeholder="Nhập điểm giữa kì">
+        <input type="number" id="diemcuoiki" placeholder="Nhập điểm cuối kì">
+
+        <button type="button" id="xephang">Điểm xếp hạng</button>
+        <p id="xeploai"></p>
+
+        <script>
+            xephang.addEventListener("click" , function() {
+                let diemgiuaki = +document.getElementById("diemgiuaki").value;
+                let diemcuoiki = +document.getElementById("diemcuoiki").value;
+
+                let diemxephang = +((diemgiuaki * 2 + diemcuoiki * 3)/5) ;
+                if ( diemxephang > 8.5 ) {
+                    document.getElementById("xeploai").innerHTML = "Điểm trung bình của bạn là " + diemxephang + " : Xếp loại A";
+                } else if (6.5 < diemxephang && diemxephang < 8.5) {
+                    document.getElementById("xeploai").innerHTML = "Điểm trung bình của bạn là " + diemxephang + " : Xếp loại B";
+                } else if (5 < diemxephang && diemxephang < 6.5) {
+                    document.getElementById("xeploai").innerHTML = "Điểm trung bình của bạn là " + diemxephang + " : Xếp loại C";
+                } else if (3 < diemxephang && diemxephang < 5) {
+                    document.getElementById("xeploai").innerHTML = "Điểm trung bình của bạn là " + diemxephang + " : Xếp loại D";
+                } else {
+                    document.getElementById("xeploai").innerHTML = "Điểm trung bình của bạn là " + diemxephang + " : Xếp loại ở nhà";
+                }
+            })
+        </script>
+    </div>
+</body>
+</html>
