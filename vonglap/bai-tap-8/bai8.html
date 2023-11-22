@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div style="text-align: center; margin-top: 250px  ;" class="bai8">
+        
+
+        <button style="width: 300px; height: 200px; background-color: green; color: white; font-size: 20px; " type="button" id="start"> BẮT ĐẦU CHƠI</button>
+        <button style="width: 300px; height: 200px; background-color: red; color: white; font-size: 20px;" type="button" id="restart"> CHƠI LẠI</button>
+
+    </div>
+
+    <script>
+
+        start.addEventListener("click" , function(){
+            let  phamVi = parseInt(prompt("Số bạn muốn đoán nằm trong khoảng lớn nhất là số nào"));
+
+            let ramdom = Math.floor(Math.random()*phamVi);
+            
+            let doan = parseInt(prompt("Số bạn đoán là"));
+
+            for ( let i = 0 ; i < 3 ; i ++){
+                if (doan == ramdom){
+                    alert("Chúc Mừng bạn đã đoán đúng");
+                    break;
+                } else if (doan < ramdom){
+                    alert("Số bạn đoán nhỏ hơn");
+                    doan = parseInt(prompt("Số bạn đoán là"));
+                } else {
+                    alert("Số bạn đoán nhỏ hơn");
+                    doan = parseInt(prompt("Số bạn đoán là"));
+                }
+            }
+
+
+        })
+
+        restart.addEventListener("click" , function(){
+            let  phamVi = parseInt(prompt("Số bạn muốn đoán nằm trong khoảng lớn nhất là số nào"));
+
+            let ramdom = Math.floor(Math.random()*phamVi);
+            
+            let doan = parseInt(prompt("Số bạn đoán là"));
+
+            for ( let i = 0 ; i < 3 ; i ++){
+                if (doan == ramdom){
+                    alert("Chúc Mừng bạn đã đoán đúng");
+                    i == 3;
+                    break;
+                } else if (doan < ramdom){
+                    alert("Số bạn đoán nhỏ hơn");
+                    phamVi = parseInt(prompt("Số bạn muốn đoán nằm trong khoảng lớn nhất là số nào"));
+                    ramdom = Math.floor(Math.random()*phamVi);
+                    doan = parseInt(prompt("Số bạn đoán là"));
+                } else {
+                    alert("Số bạn đoán nhỏ hơn");
+                    phamVi = parseInt(prompt("Số bạn muốn đoán nằm trong khoảng lớn nhất là số nào"));
+                    ramdom = Math.floor(Math.random()*phamVi);
+                    doan = parseInt(prompt("Số bạn đoán là"));
+                }
+            }
+
+
+        })
+    
+
+    </script>
+</body>
+</html>
