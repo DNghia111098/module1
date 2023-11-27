@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Ô nhập số tiền ban đầu -->
+    <div class="input">
+        <label for="initAmount">Số tiền ban đầu</label>
+        <input type="number" name="initAmount" id="initAmount" placeholder="Số tiền ban đầu">
+    </div>
+
+    <!-- Ô nhập số tháng gửi -->
+    <div class="input">
+        <label for="monthRepay">Số tháng gửi</label>
+        <input type="number" name="monthRepay" id="monthRepay" placeholder="Số tháng gửi">
+    </div>
+
+    <!-- Ô nhập lãi suất -->
+    <div class="input">
+        <label for="interestRate">Lãi suất (%)</label>
+        <input type="number" name="interestRate" id="interestRate" placeholder="Lãi suất (%)">
+    </div>
+
+    <div class="btn">
+        <button type="button" id="btnResult" onclick="interestBank()">Kết quả</button>
+    </div>
+
+    <div class="result">
+        <span id="totalInterest"></span>
+        <span id="totalAmountAfter"></span>
+    </div>
+
+
+    <script src="./LT2-Bai5/lai-suat.js"></script>
+</body>
+
+</html>
