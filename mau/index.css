@@ -1,0 +1,54 @@
+
+table{
+    border-spacing: 0;
+    border: solid 1px blue;
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.btn-outline-title {
+    background-color: aquamarine;
+}
+.avatar {
+    width: 80px;
+    height: 60px;
+}
+.btn-outline-submit {
+    padding: 10px 1170px;
+    background-color: rgba(68, 0, 255, 0.58);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: solid 1px #fff;
+    border-radius: 5px;
+}
+.btn-outline-submit:hover {
+    background:red;
+    color: blueviolet;
+    cursor: pointer;
+}
+.btn-outline-secondaty {
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: solid 1px red;
+    background-color: transparent;
+}
+.btn-outline-secondaty:hover {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-outline-danger {
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: solid 1px red;
+    background-color: transparent;
+}
+.btn-outline-danger:hover{
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
