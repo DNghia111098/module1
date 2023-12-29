@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-create {
+    background-color: #0d6efd;
+    color: white;
+}
+.btn-create:hover {
+    background:red;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(216, 203, 158) 0%, rgb(123, 168, 161) 35%, rgb(98, 209, 181) 100%);
+}
+
+.header {
+    text-align: center;
+    background-color: #08080893;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header button {
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form .form-input {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form .form-control {
+    padding: 5px 0;
+}
+
+.form .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* .list {
+    margin-top: 20px;
+}
+
+.list table{
+    width: 100%;
+    border-collapse: collapse;
+} */
+
+table td {
+    padding: 10px 20px;
+}
+.dcbd {
+    display: flex;
+}
+
+#today, #tocheck, #fixback, #done{
+    width: 300px;
+    min-height: 400px;
+    margin: 20px;
+    border: solid 2px #ccc;
+
+    text-align: center;
+    color: rgb(6, 6, 6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.list {
+    background: white;
+    height: 40px;
+    margin: 30px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    cursor: grab;
+}
+.list i{
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal__inner{
+    width: 400px;
+    position: relative;
+    top: 50%;
+    margin: auto;
+    background: white;
+    animation: modalShow 0.2s linear;
+}
+
+.modal__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgb(120, 110, 93);
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.modal__body{
+    padding: 15px;
+}
+
+.modal__body h2{
+    color: rgb(120, 110, 93);
+    margin-bottom: 10px;
+}
+
+.modal__footer{
+    padding: 15px;
+    text-align: right;
+}
+
+.modal__footer button{
+    padding: 10px 20px;
+    color: white;
+    background: rgb(120, 110, 93);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes modalShow {
+    from{
+        top: -20px;
+        opacity: 0;
+    }
+    to{
+        top: 0;
+        opacity: 1;
+    }
+    
+}
